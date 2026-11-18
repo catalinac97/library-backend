@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: library-app
+  datasource:
+    url: "${DB_URL:jdbc:postgresql://localhost:5432/library-db}"
+    username: "${DB_USERNAME:catalinamaghiar}"
+    password: "${DB_PASSWORD}"
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
